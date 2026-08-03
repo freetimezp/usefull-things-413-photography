@@ -1,0 +1,14 @@
+
+///// vite
+npm install -D vite @vitejs/plugin-react @types/react @types/react-dom
+
+///// packages
+npm install @react-three/drei @react-three/fiber @types/three  three three-stdlib
+
+npm install autoprefixer jotai leva maath postcss react react-dom tailwindcss wiggle
+
+
+
+
+///// one command
+npm install @react-three/drei @react-three/fiber @types/three autoprefixer jotai leva maath postcss react react-dom tailwindcss three three-stdlib wiggle && npm install -D vite @vitejs/plugin-react @types/react @types/react-dom
