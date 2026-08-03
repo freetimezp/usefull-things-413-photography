@@ -44,13 +44,13 @@ export const UI = () => {
 
     const unlocked = useRef(false);
 
-    const pageFlipAudio = new Audio("/audios/page-flip.mp3");
-    pageFlipAudio.preload = "auto";
-
     const base =
         (import.meta.env && import.meta.env.BASE_URL) !== undefined
             ? import.meta.env.BASE_URL
             : "/usefull-things-413-photography/";
+
+    const pageFlipAudio = new Audio(base + "audios/page-flip.mp3");
+    pageFlipAudio.preload = "auto";
 
     useEffect(() => {
         const unlock = () => {
