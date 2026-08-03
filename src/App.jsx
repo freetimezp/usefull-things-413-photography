@@ -2,8 +2,8 @@ import { Loader } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 
-import { Experience } from "./components/Experience";
-import { UI } from "./components/UI";
+import { Experience } from "./components/Experience.jsx";
+import { UI } from "./components/UI.jsx";
 
 function App() {
     return (

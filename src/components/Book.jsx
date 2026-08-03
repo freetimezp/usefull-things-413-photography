@@ -16,8 +16,10 @@ import {
     Uint16BufferAttribute,
     Vector3,
 } from "three";
+
 import { degToRad } from "three/src/math/MathUtils.js";
-import { pageAtom, pages } from "./UI";
+
+import { pageAtom, pages } from "./UI.jsx";
 
 const easingFactor = 0.5; // Controls the speed of the easing
 const easingFactorFold = 0.3; // Controls the speed of the easing

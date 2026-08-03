@@ -78,7 +78,10 @@ export const UI = () => {
 
     return (
         <>
-            <main className="pointer-events-none select-none z-10 fixed  inset-0  flex justify-between flex-col">
+            <main
+                className="pointer-events-none select-none z-10 fixed  inset-0  
+                flex justify-between flex-col"
+            >
                 <a className="pointer-events-auto mt-1 ml-10" href="#">
                     <img className="w-32" src="/images/logo.png" />
                 </a>
@@ -229,7 +232,10 @@ export const UI = () => {
 
             <div className="fixed inset-0 flex items-center -rotate-2 select-none">
                 <div className="relative">
-                    <div className="bg-white/0  animate-horizontal-scroll flex items-center gap-8 w-max px-8">
+                    <div
+                        className="bg-white/0  animate-horizontal-scroll flex items-center 
+                            gap-8 w-max px-8"
+                    >
                         <h1 className="shrink-0 text-white text-10xl font-black ">
                             Photography
                         </h1>
@@ -256,7 +262,10 @@ export const UI = () => {
                         </h2>
                     </div>
 
-                    <div className="absolute top-0 left-0 bg-white/0 animate-horizontal-scroll-2 flex items-center gap-8 px-8 w-max">
+                    <div
+                        className="absolute top-0 left-0 bg-white/0 animate-horizontal-scroll-2 
+                            flex items-center gap-8 px-8 w-max"
+                    >
                         <h1 className="shrink-0 text-white text-10xl font-black ">
                             Photography
                         </h1>

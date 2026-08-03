@@ -1,5 +1,6 @@
 import { Environment, Float, OrbitControls } from "@react-three/drei";
-import { Book } from "./Book";
+
+import { Book } from "./Book.jsx";
 
 export const Experience = () => {
     return (
@@ -15,7 +16,7 @@ export const Experience = () => {
 
             <OrbitControls />
 
-            <Environment preset="night"></Environment>
+            <Environment preset="studio"></Environment>
 
             <directionalLight
                 position={[2, 5, 2]}
