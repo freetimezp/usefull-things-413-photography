@@ -47,6 +47,11 @@ export const UI = () => {
     const pageFlipAudio = new Audio("/audios/page-flip.mp3");
     pageFlipAudio.preload = "auto";
 
+    const base =
+        (import.meta.env && import.meta.env.BASE_URL) !== undefined
+            ? import.meta.env.BASE_URL
+            : "/usefull-things-413-photography/";
+
     useEffect(() => {
         const unlock = () => {
             unlocked.current = true;
@@ -83,7 +88,7 @@ export const UI = () => {
                 flex justify-between flex-col"
             >
                 <a className="pointer-events-auto mt-1 ml-10" href="#">
-                    <img className="w-32" src="/images/logo.png" />
+                    <img className="w-32" src={`${base}images/logo.png`} />
                 </a>
 
                 <div className="w-full mb-10 overflow-auto pointer-events-auto flex justify-center">

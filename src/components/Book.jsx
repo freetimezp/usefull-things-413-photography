@@ -88,18 +88,23 @@ const pageMaterials = [
     }),
 ];
 
+const base =
+    (import.meta.env && import.meta.env.BASE_URL) !== undefined
+        ? import.meta.env.BASE_URL
+        : "/usefull-things-413-photography/";
+
 pages.forEach((page) => {
-    useTexture.preload(`/textures/${page.front}.jpg`);
-    useTexture.preload(`/textures/${page.back}.jpg`);
-    useTexture.preload(`/textures/book-cover-roughness.jpg`);
+    useTexture.preload(`${base}textures/${page.front}.jpg`);
+    useTexture.preload(`${base}textures/${page.back}.jpg`);
+    useTexture.preload(`${base}textures/book-cover-roughness.jpg`);
 });
 
 const Page = ({ number, front, back, page, opened, bookClosed, ...props }) => {
     const [picture, picture2, pictureRoughness] = useTexture([
-        `/textures/${front}.jpg`,
-        `/textures/${back}.jpg`,
+        `${base}textures/${front}.jpg`,
+        `${base}textures/${back}.jpg`,
         ...(number === 0 || number === pages.length - 1
-            ? [`/textures/book-cover-roughness.jpg`]
+            ? [`${base}textures/book-cover-roughness.jpg`]
             : []),
     ]);
 
